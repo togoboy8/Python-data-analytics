@@ -8,7 +8,7 @@ hrate = input('Enter your hourly rate?:  ')
 
 ot = int(hours) - 40
 
-otsalary = 1.5 * int(ot)
+otsalary = (int(hrate) *1.5) * int(ot)
 
 weeklysalary = int(hours) * int(hrate)
 
@@ -29,5 +29,4 @@ elif int(hours) > 40:
     weeklysalary += otsalary
     
     print('Anyways, you get to fill up your pocket with an extra $' + str(otsalary) + ' and a total salary of: $' + str(weeklysalary))
-    
     
