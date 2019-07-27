@@ -17,26 +17,16 @@
 #keep on asking questions until user enter defined exit input
 while True:
 
-  question = "Good day. What is your problem? Enter your response here or Q to quit: \n"
+  question = "\nGood day. What is your problem? Enter your response here or Q to quit: "
   answer = input(question)
   answer = answer.lower()
   
-  print(answer)
+
   #take user input and turn it into lower case then compare with exit variables
   if answer == "q" or answer == "i am feeling great":
 
       break 
-
-  elif 'i' in answer:
-
-	  	answer = answer.split()
-	    answer.remove("i")
-	    answer.append("you")
-	    #'am' == 'are'
-	    print(answer)
-	    print(" i is here")
-	      
-	      
+      
     
   else:
 
